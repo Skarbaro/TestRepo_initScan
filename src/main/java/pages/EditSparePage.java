@@ -29,11 +29,11 @@ public class EditSparePage extends ParentPage{
         actionsWithOurElements.clickOnElement(buttonDelete);
     }
 	
-	public void enterSpareNameInToInput(String spareName) {
-        actionsWithOurElements.enterTextInToElement(spareNameInput, spareName);
-    }
-	
 	public void clickButtonCreate() {
         actionsWithOurElements.clickOnElement(buttonAdd);
+    }
+	
+	public void selectSpareTypeInDD(String spareType) {
+        actionsWithOurElements.selectTextInDD(spareTypeDD, spareType);
     }
 }
