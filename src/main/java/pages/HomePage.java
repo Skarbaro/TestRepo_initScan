@@ -21,11 +21,6 @@ public class HomePage extends ParentPage {
     @Step
     public boolean isAvatarDisplayed(){
         return actionsWithOurElements.isElementDisplayed(avatarLogo);
-//        try {
-//        return webDriver.findElement(By.xpath(".//*[@class='pull-left image']")).isDisplayed();
-//        } catch (Exception e){
-//        return false;
-//        }
     }
 
     public void clickOnSubMenuSpare() {
