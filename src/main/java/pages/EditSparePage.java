@@ -28,4 +28,8 @@ public class EditSparePage extends ParentPage{
     public void clickButtonDelete(){
         actionsWithOurElements.clickOnElement(buttonDelete);
     }
+	
+	public void enterSpareNameInToInput(String spareName) {
+        actionsWithOurElements.enterTextInToElement(spareNameInput, spareName);
+    }
 }
