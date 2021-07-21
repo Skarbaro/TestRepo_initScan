@@ -15,7 +15,6 @@ public class LogInNew extends ParentTest {
         loginPage.clickButtonVhod();
 
         checkExpectedResult("Avatar is not present", homePage.isAvatarDisplayed());
-//        Assert.assertTrue("Avatar is not present", homePage.isAvatarDisplayed());  // valid
     }
 
     @Test
@@ -26,8 +25,8 @@ public class LogInNew extends ParentTest {
         loginPage.clickButtonVhod();
 
         checkExpectedResult("Button is not present", loginPage.isButtonVhodDisplayed(),false);
-//        Assert.assertTrue("Button is not present", loginPage.isButtonVhodDisplayed());
-//        Assert.assertFalse("Avatar is not present", homePage.isAvatarDisplayed()); // not valid
+        Assert.assertTrue("Button is not present", loginPage.isButtonVhodDisplayed());
+        Assert.assertFalse("Avatar is not present", homePage.isAvatarDisplayed()); // not valid
     }
 
     @Test
